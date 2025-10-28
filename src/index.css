@@ -1,0 +1,137 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  /* background-image: url(assets/food_bg.jpg);
+  background-size: cover; */
+  
+}
+
+.searchBar{
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  margin-top: 22px;
+}
+
+.searchBar input{
+  width: 400px;
+  padding: 9px;
+  font-size: 22px;
+  border: none;
+  background-color: #e7e7e7;
+  border-radius: 6px;
+}
+
+.searchBar button{
+  width: 90px;
+  background-color: rgb(246, 159, 72);
+  color: white;
+  border: none;
+  font-size: 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.meals{
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; ✅ Recommended if content stacks */
+  /* overflow-y: auto; */
+  gap: 21px;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+  margin-top: 44px;
+}
+
+.meals img{
+  width: 100%;
+  height: 270px;
+  border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
+}
+
+.mealImg{
+  width: 280px;
+  height: 380px;
+  text-align: center;
+  /* background-color: #fff; */
+  box-shadow: 0px 3px 3px 3 px rgb(216, 214, 214);
+}
+
+.mealImg p{
+  font-weight: 600;
+}
+
+.mealImg button{
+  width: 120px;
+  background-color: rgb(246, 159, 72);
+  color: white;
+  font-size: 17px;
+  border: none;
+  border-radius: 21px;
+  padding: 7px;
+  cursor: pointer;
+}
+
+.mealInfo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 40px;
+  background-color: rgb(255, 181, 42);
+  box-sizing: border-box;
+}
+
+.mealInfo img {
+  width: 45%;
+  height: auto;
+  object-fit: cover;
+}
+
+.mealInfo .info {
+  width: 50%;
+}
+
+.mealInfo h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.mealInfo button {
+  background-color: orangered;
+  color: white;
+  font-size: 20px;
+  padding: 10px 16px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.mealInfo h3 {
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+.mealInfo p {
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+
+.msg{
+  text-align: center;
+}
+
+.head{
+  text-align: center;
+}
+
+
