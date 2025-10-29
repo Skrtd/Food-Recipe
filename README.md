@@ -1,42 +1,17 @@
+```markdown
 # Food-Recipe
 
-A simple Food Recipe web/mobile application that lets users browse, search, and save recipes. This repository contains the source code, assets, and documentation for building, running, and contributing to the project.
+A React-based Food Recipe web app that lets users browse, search, and view recipe details. The app fetches recipe data from TheMealDB API.
 
-## Features
+## Demo / Run locally
 
-- Browse recipes by category (e.g., breakfast, lunch, dinner, desserts)
-- Search recipes by name or ingredient
-- View recipe details (ingredients, steps, cooking time, servings)
-- Save favorite recipes
-- Responsive UI for desktop and mobile
-
-## Tech Stack
-
-- Frontend: (e.g., React, Vue, Angular, or native mobile - replace with actual stack)
-- Backend: (e.g., Node.js/Express, Django, Flask - replace with actual stack if present)
-- Database: (e.g., PostgreSQL, MongoDB - replace with actual DB if present)
-
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
-
-### Prerequisites
-
-- Node.js >= 14 (if project is Node-based)
-- npm or yarn
-- Any database required by the project (see project config)
-
-### Installation
-
-1. Clone the repository
-
+1. Clone the repo
    ```bash
    git clone https://github.com/Skrtd/Food-Recipe.git
    cd Food-Recipe
    ```
 
 2. Install dependencies
-
    ```bash
    npm install
    # or
@@ -44,48 +19,66 @@ These instructions will get you a copy of the project up and running on your loc
    ```
 
 3. Configure environment variables
+   - Copy `.env.example` to `.env` and set your API key if needed:
+     - For Create React App: REACT_APP_MEALDB_KEY=1
+     - For Vite: VITE_MEALDB_KEY=1
+   - The demo API key `1` works for basic testing; register for your own key at https://www.themealdb.com/api.php for heavier use.
 
-   - Copy `.env.example` to `.env` and update any required values (database connection, API keys, etc.)
-
-4. Run the app
-
+4. Run the app in development
    ```bash
    npm start
-   # or for many projects
+   # or (Vite)
    npm run dev
    ```
 
-Visit http://localhost:3000 (or the configured port) in your browser.
+5. Build for production
+   ```bash
+   npm run build
+   ```
 
-## Project Structure
+Visit http://localhost:3000 (or the port printed by your dev server) in your browser.
 
-- src/ - Application source code
-- public/ - Static assets
-- scripts/ - Build and helper scripts
-- README.md - Project documentation
+## Features
 
-(Adjust structure to match the repository layout.)
+- Search recipes by name
+- View recipe details
+- Responsive UI for desktop and mobile
+
+## Tech stack
+
+React · Vite · TheMealDB API · CSS · Tailwind CSS
+
+## TheMealDB API
+
+This project uses TheMealDB to fetch recipe data. Demo API key: `1`. For production use, register for your free API key at https://www.themealdb.com/api.php.
+
+Common endpoints used:
+- Search by name: /search.php?s=NAME
+- Lookup by id: /lookup.php?i=ID
+
+## Project structure (typical)
+
+- src/
+  - assets/ - static assets
+  - components/ - React components
+  - App.jsx - app root
+  - index.css - css styling
+  - main.jsx - entry point
+- package.json — scripts and deps
+- README.md — this file
+
+
+## Getting started (quick)
+
+- Use the search bar to look up recipes by name.
+- Click a recipe to view details.
 
 ## Contributing
 
-Contributions are welcome. To contribute:
+Contributions welcome. For small fixes or docs, fork the repo, create a branch, make changes, and open a PR. For larger features, open an issue first to discuss.
 
-1. Fork the repository
-2. Create a feature branch: git checkout -b feature/my-feature
-3. Commit your changes: git commit -m "Add my feature"
-4. Push to the branch: git push origin feature/my-feature
-5. Open a Pull Request describing your changes
+## Credits
 
-Please follow the existing code style and add tests where appropriate.
-
-## License
-
-This project is available under the MIT License. See the LICENSE file for more information.
-
-## Contact
-
-If you have questions or want to contribute, open an issue or pull request on GitHub.
-
----
-
-Notes for maintainer: Replace the placeholder tech-stack items and project structure notes above with the actual details from the repository (frameworks, commands, ports, and database).
+Built and maintained by Skrtd. © 2025 Skrtd — https://github.com/Skrtd
+```
+Built and maintained by Skrtd. © 2025 Skrtd — https://github.com/Skrt
