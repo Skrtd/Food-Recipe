@@ -1,20 +1,11 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  /* background-image: url(assets/food_bg.jpg);
-  background-size: cover; */
-  
-}
-
-.searchBar{
+.searchBar {
   display: flex;
   justify-content: center;
   gap: 7px;
   margin-top: 22px;
 }
 
-.searchBar input{
+.searchBar input {
   width: 400px;
   padding: 9px;
   font-size: 22px;
@@ -23,7 +14,7 @@
   border-radius: 6px;
 }
 
-.searchBar button{
+.searchBar button {
   width: 90px;
   background-color: rgb(246, 159, 72);
   color: white;
@@ -33,7 +24,7 @@
   cursor: pointer;
 }
 
-.meals{
+.meals {
   display: flex;
   flex-wrap: wrap;
   /* flex-direction: column; ✅ Recommended if content stacks */
@@ -45,14 +36,14 @@
   margin-top: 44px;
 }
 
-.meals img{
+.meals img {
   width: 100%;
   height: 270px;
   border-top-left-radius: 11px;
   border-top-right-radius: 11px;
 }
 
-.mealImg{
+.mealImg {
   width: 280px;
   height: 380px;
   text-align: center;
@@ -60,11 +51,11 @@
   box-shadow: 0px 3px 3px 3 px rgb(216, 214, 214);
 }
 
-.mealImg p{
+.mealImg p {
   font-weight: 600;
 }
 
-.mealImg button{
+.mealImg button {
   width: 120px;
   background-color: rgb(246, 159, 72);
   color: white;
@@ -125,13 +116,10 @@
   text-align: justify;
 }
 
-
-.msg{
+.msg {
   text-align: center;
 }
 
-.head{
+.head {
   text-align: center;
 }
-
-
